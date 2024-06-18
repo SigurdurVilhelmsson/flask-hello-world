@@ -1,4 +1,4 @@
 Flask
 Gunicorn
 openai
-textract
+textract-py3
