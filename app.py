@@ -67,9 +67,9 @@ def analyze_text(text):
     Skýrsla:
     {text}
 
-    Vinsamlegast yfirfarið skýrsluna byggt á almennum leiðbeiningum sem gefnar eru hér að ofan og gefið endurgjöf.">
+    Vinsamlegast yfirfarið skýrsluna byggt á almennum leiðbeiningum sem gefnar eru hér að ofan og gefið endurgjöf."""
         messages=[
-                {"role": "system", "content": "Þú ert aðstoðarkennar í efnafræði sem hjálpar til við að fara yfir e>
+                {"role": "system", "content": "Þú ert aðstoðarkennar í efnafræði sem hjálpar til við að fara yfir efnafræðiskýrslur. Þú talar íslensku."},
                 {"role": "user", "content": prompt}
             ]
         response = client.chat.completions.create(
